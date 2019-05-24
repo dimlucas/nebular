@@ -6,8 +6,8 @@ import { HasBackdropDialogComponent } from './components/has-backdrop-dialog.com
   selector: 'nb-dialog-has-backdrop',
   template: `
     <div class="btn-group btn-divided-group btn-outline-divided-group">
-      <button nbButton hero (click)="openWithBackdrop()">Open with backdrop</button>
-      <button nbButton hero (click)="openWithoutBackdrop()">Open without backdrop</button>
+      <button nbButton (click)="openWithBackdrop()">Open with backdrop</button>
+      <button nbButton (click)="openWithoutBackdrop()">Open without backdrop</button>
     </div>
   `,
   styleUrls: ['./dialog-common.scss'],

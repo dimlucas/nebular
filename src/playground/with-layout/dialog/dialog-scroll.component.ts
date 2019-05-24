@@ -6,8 +6,8 @@ import { ScrollDialogComponent } from './components/scroll-dialog.component';
   selector: 'nb-dialog-scroll',
   template: `
     <div class="btn-group btn-divided-group btn-outline-divided-group">
-      <button nbButton hero (click)="openWithScroll()">Open with scroll</button>
-      <button nbButton hero (click)="openWithoutScroll()">Open without scroll</button>
+      <button nbButton (click)="openWithScroll()">Open with scroll</button>
+      <button nbButton (click)="openWithoutScroll()">Open without scroll</button>
     </div>
   `,
   styleUrls: ['./dialog-common.scss'],

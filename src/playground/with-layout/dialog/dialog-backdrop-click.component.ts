@@ -6,8 +6,8 @@ import { BackdropClickDialogComponent } from './components/backdrop-click-dialog
   selector: 'nb-dialog-backdrop-click',
   template: `
     <div class="btn-group btn-divided-group btn-outline-divided-group">
-      <button nbButton hero (click)="openWithBackdropClick()">Open with backdrop click close</button>
-      <button nbButton hero (click)="openWithoutBackdropClick()">Open without backdrop click close</button>
+      <button nbButton (click)="openWithBackdropClick()">Open with backdrop click close</button>
+      <button nbButton (click)="openWithoutBackdropClick()">Open without backdrop click close</button>
     </div>
   `,
   styleUrls: ['./dialog-common.scss'],

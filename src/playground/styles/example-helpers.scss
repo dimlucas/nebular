@@ -1,0 +1,44 @@
+@mixin nb-example-helpers() {
+
+  nb-layout-column {
+    min-height: 40vw;
+  }
+
+  @each $size in (50, 60, 70, 80, 90, 100) {
+    .example-height-#{$size} {
+      min-height: #{$size}vw;
+      display: block;
+    }
+  }
+
+  .example-horizontal-spread {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .example-items-row {
+    margin-top: -1rem;
+
+    > * {
+      margin-top: 1rem;
+      margin-right: 1rem;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  @each $status in nb-get-statuses() {
+    .colored-column-#{$status} {
+      background: nb-theme(color-#{$status}-300);
+      color: nb-theme(color-basic-800);
+    }
+  }
+
+  .colored-column-basic {
+    background: nb-theme(background-basic-color-4);
+    color: nb-theme(color-basic-800);
+  }
+}

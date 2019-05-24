@@ -6,8 +6,8 @@ import { AutoFocusDialogComponent } from './components/auto-focus-dialog.compone
   selector: 'nb-dialog-auto-focus',
   template: `
     <div class="btn-group btn-divided-group btn-outline-divided-group">
-      <button nbButton hero (click)="openWithAutoFocus()">Open with auto focus</button>
-      <button nbButton hero (click)="openWithoutAutoFocus()">Open without auto focus</button>
+      <button nbButton (click)="openWithAutoFocus()">Open with auto focus</button>
+      <button nbButton (click)="openWithoutAutoFocus()">Open without auto focus</button>
     </div>
   `,
   styleUrls: ['./dialog-common.scss'],
